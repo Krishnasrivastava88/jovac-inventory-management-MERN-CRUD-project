@@ -1,43 +1,69 @@
-# Inventory Management System MERN CRUD App
+📦 Inventory Management System (IMS)
+A professional MERN Stack application designed for seamless product management. This project features a modern, responsive UI and a robust backend for full CRUD operations.
 
-A simple MERN project that lets the user insert, update, delete & get products from the MongoDB.
+🛠️ Tech Stack
+Frontend: React.js, Bootstrap 5, FontAwesome
 
-## To Run App:
+Backend: Node.js, Express.js
 
-### 1. Open the folder in vs code and run (npm install) command.
-   
-### 2. In MongoDB Compass:
-   - Create Database: IMS
-   - Collection Name: products
+Database: MongoDB Atlas
 
-### 3. Then in vs code, open two terminals in split:
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/86ed0828-84b8-43b0-89fd-8caa17b88833)
+Routing: React Router DOM
 
-### 4. In one terminal run these commands (For Backend / Server):
-   - cd Backend
-   - npm run server
+🚀 How to Run the App
+1. Prerequisites
+Ensure you have Node.js and MongoDB Compass installed on your machine.
 
-### 5. In the other terminal run these commands (For Frontend / Client):
-   - cd Frontend
-   - cd inventory_management_system
-   - npm start
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/93fa528b-bc88-49c2-9922-19b317336b7c)
+2. Database Setup
+Open MongoDB Compass.
 
-## Output:
-### 1. GET (Displaying products)
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/09f7d43a-344b-4122-b415-b3736307cf45)
+Create a new database named IMS.
 
-### 2. POST (Inserting a new product)
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/d31e9f36-c119-4a04-9cc0-ddc9fe94b159)
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/39ec387f-5efc-4c1f-a7eb-a87612acc17a)
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/a6b5c6bf-77d7-41ab-9ca0-3a8bfc71954d)
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/3d43e877-c2e6-414b-bef9-410caae1668e)
+Create a collection within it named products.
 
-### 3. PUT (Updating a product)
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/d35f7ab0-3fda-4b1c-9055-67ca8c7b2ab6)
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/7dd107db-6fde-416d-b5c6-2175916f872f)
+3. Start the Backend
+Open a terminal in the root directory:
 
-### 4. DELETE (Deleting a product)
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/d846ff43-6abd-4baa-9ed6-df736f2d411e)
-   ![image](https://github.com/mhy20401/Inventory-Management-System-MERN-CRUD-Project/assets/99351091/cc6368bd-f391-4d6b-b814-c931d48a0878)
-# inventory-management-mern
+Bash
+cd Backend
+npm install
+npm run server
+The server will start on http://localhost:3001.
+
+4. Start the Frontend
+Open a second terminal split:
+
+Bash
+cd Frontend/Inventory-Management-System
+npm install
+npm start
+The client will open on http://localhost:3000.
+
+📸 Application Preview
+1. Dashboard (Home)
+The entry point featuring quick navigation and a professional welcome hero.
+
+2. Inventory View (GET)
+A clean, high-density table displaying all products with action icons for editing and deleting.
+
+3. Add Product (POST)
+A modern card-based form with validation for Product Name, Price, and 12-digit Barcodes.
+
+4. Edit Product (PUT)
+Real-time data fetching allows for seamless updates to existing inventory items.
+
+5. Remove Product (DELETE)
+Instant deletion with database synchronization.
+
+📂 Project Structure
+Plaintext
+├── Backend
+│   ├── Models      # Mongoose Schema
+│   ├── Routes      # API Endpoints
+│   └── index.js    # Server Entry Point
+└── Frontend
+    └── src
+        ├── components # UI Components (Navbar, Home, etc.)
+        ├── App.js     # Logic & Routing
+        └── App.css    # Custom Indigo/Slate Styling
+Developed with ❤️ by Krishna
